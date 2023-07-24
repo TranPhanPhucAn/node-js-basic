@@ -23,14 +23,27 @@
     <div class="upload-file-container">
         <form method="POST" action="/upload-profile-pic" enctype="multipart/form-data">
             <div class="avatar">
-                <label for="">Avatar:</label>
+                <label >Avatar:</label>
                 <input type="file" name="profile_pic">
             </div>
             <div class="but">
                 <button type="submit" class="btn-save">Save file</button>
             </div>
+        
 
-
+        </form>
+        <form method="POST" action="/upload-multiple-images" enctype="multipart/form-data">
+            <div>
+                <h3>Upload Multiple Files</h3>
+                <div>
+                    <span>Select multiple images:</span>
+                    <input type="file" name="multiple_images" multiple />
+                </div>
+        
+            </div>
+            <div>
+                <input type="submit" name="btn_upload_multiple_images" value="Upload" />
+            </div>
         </form>
     </div>
 
